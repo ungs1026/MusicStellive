@@ -1,0 +1,103 @@
+-- DB name = stellive
+-- table = albums / artist / songs 
+
+-- albums
+CREATE TABLE `albums` (
+  `id` int(11) NOT NULL,
+  `title` varchar(250) NOT NULL,
+  `artist` int(11) NOT NULL,
+  `artworkPath` varchar(500) NOT NULL,
+	primary key(id)
+);
+
+-- INSERT
+INSERT INTO `albums` (id, `title`, `artist`, `artworkPath`) VALUES
+(1, 'TenkoShibuki', 1, 'source/shibuki.png'),
+(2, 'AokumoRin', 2, 'source/rin.png'),
+(3, 'HanakoNana', 3, 'source/nana.png'),
+(4, 'YuzuhaRiko', 4, 'source/riko.png');
+
+update albums set artist= 3 where id=3;
+
+
+-- artist
+CREATE TABLE `artists` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+	primary key(id)
+);
+
+
+-- INSERT
+INSERT INTO `artists` (id, `name`) VALUES
+(1, 'TenkoShibuki'),
+(2, 'AokumoRin'),
+(3, 'HanakoNana'),
+(4, 'YuzuhaRiko');
+
+
+-- songs
+CREATE TABLE `songs` (
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(250) NOT NULL,
+  `artist` int(11) NOT NULL,
+  `album` int(11) NOT NULL,
+  `duration` varchar(8) NOT NULL,
+  `path` varchar(500) NOT NULL,
+	`albumOrder` int(11) NOT NULL,
+	songArt varchar(500) not null,
+  `plays` int(11) NOT NULL,
+	primary key(id)
+) 
+
+-- INSERT
+-- shibuki
+insert into songs (title, artist, album, duration, path, albumOrder, songArt, plays) values
+('여우비', 1, 1, '4:06', 'source/mp3/shibuki_여우비.mp3', 1, 'source/img/shibuki_여우비.jpg', 0),
+('너에게메롱', 1, 1, '3:40', 'source/mp3/shibuki_너에게메롱.mp3', 1, 'source/img/shibuki_너에게메롱.jpg', 0),
+('Sabotage', 1, 1, '3:56', 'source/mp3/shibuki_Sabotage.mp3', 1, 'source/img/shibuki_Sabotage.jpg', 0),
+('서향꽃', 1, 1, '3:47', 'source/mp3/shibuki_서향꽃.mp3', 1, 'source/img/shibuki_서향꽃.jpg', 0),
+('마리골드', 1, 1, '4:50', 'source/mp3/shibuki_마리골드.mp3', 1, 'source/img/shibuki_마리골드.jpg', 0),
+('중독성의츄', 1, 1, '3:51', 'source/mp3/shibuki_중독성의츄.mp3', 1, 'source/img/shibuki_중독성의츄.jpg', 0),
+('그래도나사랑하지', 1, 1, '2:36', 'source/mp3/shibuki_그래도나사랑하지.mp3', 1, 'source/img/shibuki_그래도나사랑하지.jpg', 0),
+('낮에뜨는달', 1, 1, '3:47', 'source/mp3/shibuki_낮에뜨는달.mp3', 1, 'source/img/shibuki_낮에뜨는달.jpg', 0);
+
+-- rin
+insert into songs (title, artist, album, duration, path, albumOrder, songArt, plays) values
+('Rumor', 2, 2, '2:56', 'source/mp3/rin_Rumor.mp3', 2, 'source/img/rin_Rumor.jpg', 0),
+('안녕,또언젠가!', 2, 2, '3:24', 'source/mp3/rin_안녕,또언젠가!.mp3', 2, 'source/img/rin_안녕,또언젠가!.jpg', 0),
+('유령도쿄', 2, 2, '3:22', 'source/mp3/rin_유령도쿄.mp3', 2, 'source/img/rin_유령도쿄.jpg', 0),
+('Show', 2, 2, '3:09', 'source/mp3/rin_Show.mp3', 2, 'source/img/rin_Show.jpg', 0),
+('CallMeMaybe', 2, 2, '3:15', 'source/mp3/rin_CallMeMaybe.mp3', 2, 'source/img/rin_CallMeMaybe.jpg', 0),
+('역몽', 2, 2, '5:04', 'source/mp3/rin_역몽.mp3', 2, 'source/img/rin_역몽.jpg', 0),
+('오니가없는사이에', 2, 2, '3:11', 'source/mp3/rin_오니가없는사이에.mp3', 2, 'source/img/rin_오니가없는사이에.jpg', 0),
+('로키', 2, 2, '3:48', 'source/mp3/rin_로키.mp3', 2, 'source/img/rin_로키.jpg', 0);
+
+-- nana
+insert into songs (title, artist, album, duration, path, albumOrder, songArt, plays) values
+('가짜얼굴', 3, 3, '2:30', 'source/mp3/nana_가짜얼굴.mp3', 3, 'source/img/nana_가짜얼굴.jpg', 0),
+('푸른산호초', 3, 3, '3:42', 'source/mp3/nana_푸른산호초.mp3', 3, 'source/img/nana_푸른산호초.jpg', 0),
+('신같네', 3, 3, '3:23', 'source/mp3/nana_신같네.mp3', 3, 'source/img/nana_신같네.jpg', 0),
+('붕붕', 3, 3, '3:50', 'source/mp3/nana_붕붕.mp3', 3, 'source/img/nana_붕붕.jpg', 0),
+('nopain', 3, 3, '3:34', 'source/mp3/nana_nopain.mp3', 3, 'source/img/nana_nopain.jpg', 0),
+('비비디바', 3, 3, '2:44', 'source/mp3/nana_비비디바.mp3', 3, 'source/img/nana_비비디바.jpg', 0),
+('무희', 3, 3, '3:44', 'source/mp3/nana_무희.mp3', 3, 'source/img/nana_무희.jpg', 0),
+('춤', 3, 3, '3:27', 'source/mp3/nana_춤.mp3', 3, 'source/img/nana_춤.jpg', 0);
+
+-- riko
+insert into songs (title, artist, album, duration, path, albumOrder, songArt, plays) values
+('지구를줄게', 4, 4, '4:37', 'source/mp3/riko_지구를줄게.mp3', 4, 'source/img/riko_지구를줄게.jpg', 0),
+('괴수의꽃노래', 4, 4, '3:44', 'source/mp3/riko_괴수의꽃노래.mp3', 4, 'source/img/riko_괴수의꽃노래.jpg', 0),
+('용사', 4, 4, '3:15', 'source/mp3/riko_용사.mp3', 4, 'source/img/riko_용사.jpg', 0),
+('태어나서처음으로', 4, 4, '3:47', 'source/mp3/riko_태어나서처음으로.mp3', 4, 'source/img/riko_태어나서처음으로.jpg', 0),
+('피날레', 4, 4, '3:59', 'source/mp3/riko_피날레.mp3', 4, 'source/img/riko_피날레.jpg', 0),
+('수고했어,오늘도', 4, 4, '3:07', 'source/mp3/riko_수고했어,오늘도.mp3', 4, 'source/img/riko_수고했어,오늘도.jpg', 0),
+('새벽과반딧불이', 4, 4, '5:05', 'source/mp3/riko_새벽과반딧불이.mp3', 4, 'source/img/riko_새벽과반딧불이.jpg', 0),
+('나언젠간떠날거야', 4, 4, '2:36', 'source/mp3/riko_나언젠간떠날거야.mp3', 4, 'source/img/riko_나언젠간떠날거야.jpg', 0);
+
+
+-- update
+UPDATE albums SET artworkPath="source/shibuki_2.png" WHERE id=1;
+UPDATE albums SET artworkPath="source/rin_2.png" WHERE id=2;
+UPDATE albums SET artworkPath="source/nana_2.png" WHERE id=3;
+UPDATE albums SET artworkPath="source/riko_2.png" WHERE id=4;
