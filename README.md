@@ -63,7 +63,7 @@
 ### Board Page
 ![Board Page](music_play/readme_img/board.png)
 - **Board Page**입니다.  Navigation의 FreeBoard와 NoticeBoard 클릭을 통해 확인 할 수 있습니다.
-- Freeboard의 경우 이용자들과 소통이 가능하며, NoticeBoard는 공지사항을 확인할 수 있습니다.
+- **FreeBoard**의 경우 이용자들과 소통이 가능하며, **NoticeBoard**는 공지사항을 확인할 수 있습니다.
 - 게시판 작성의 경우 Summernote의 기능을 이용하였으며, Bootstrap을 이용해 디자인하였습니다.
 
 <hr>
