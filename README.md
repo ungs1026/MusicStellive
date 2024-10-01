@@ -2,7 +2,15 @@
 <!--프로젝트 메인 이미지-->
 ![Project Title](music_play/readme_img/cliche.png)
 
+<hr>
+
+# 언어 사용량 통계
+[![언어 사용량 통계](https://github-readme-stats.vercel.app/api/top-langs/?username=ungs1026&layout=compact)](https://github.com/ungs1026/MusicStellive)
+
+<hr>
+
 <!--목차-->
+# 목차
 - [Project](#project)
     - [Features](#features)
     - [Techniques](#techniques)
