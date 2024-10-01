@@ -24,7 +24,11 @@
 				</span>
 			</div>
 			<div class="navItem">
-				<span role="link" tabindex="0" onclick="openPage('notice.php?page=1&code=freeboard')" class="navItemLink">NoticeBoard
+				<span role="link" tabindex="0" onclick="openPage('notice.php?page=1&code=freeboard')" class="navItemLink">FreeBoard
+				</span>
+			</div>
+			<div class="navItem">
+				<span role="link" tabindex="0" onclick="openPage('notice.php?page=1&code=notice')" class="navItemLink">NoticeBoard
 				</span>
 			</div>
 
