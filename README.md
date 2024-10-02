@@ -15,6 +15,7 @@
     - [Artist Page](#artist-page)
     - [Search Page](#search-page)
     - [Board Page](#board-page)
+- [Caution](#caution)
 - [Contact](#contact)
 
 <hr>
@@ -47,22 +48,28 @@
 - **Main Page**입니다. 해당 페이지는 Navigation에서 browse를 클릭하는 경우 나오는 페이지 입니다.
 - 각 멤버별 Playlist를 보여주며 하단 PlayBar의 경우 랜덤한 노래 10개를 Playlist에 등록되어 재생됩니다.
 
+<br>
+
 ### Playlist Page
 ![Playlist Page](music_play/readme_img/playlist.png)
 - **Playlist Page**입니다. Main Page에서 멤버 Image를 클릭하는 경우 볼 수 있습니다.
 - 멤버의 노래 리스트 확인 및 재생을 통해 Playlist의 내용을 수정할 수 있습니다.
+
+<br>
 
 ### Artist Page
 ![Artist Page](music_play/readme_img/Artist.png)
 - **Artist Page**입니다. PlayBar에서 멤버의 이름을 클릭하는 경우 확인 할 수 있습니다.
 - 해당 멤버의 모든 노래 재생 및 index의 상단 5개의 노래 확인, Album의 이미지 확인이 가능합니다.
 
+<br>
 
 ### Search Page
 ![Search Page](music_play/readme_img/search.png)
 - **Search Page**입니다.  Navigation의 Search를 클릭하여 확인할 수 있습니다.
 - 노래 이름 및 가수, 앨범의 이름 일부 검색을 통해 원하는 정보를 얻을 수 있습니다.
 
+<br>
 
 ### Board Page
 ![Board Page](music_play/readme_img/board.png)
@@ -71,6 +78,12 @@
 - 게시판 작성의 경우 Summernote의 기능을 이용하였으며, Bootstrap을 이용해 디자인하였습니다.
 
 <hr>
+
+<!--주의-->
+## Caution
+- **MP3**파일의 경우 용량문제로 인해 파일에서 제외되었습니다.
+- 해당 프로젝트는 **스텔라이브 네이버 팬카페**에 등록된 팬아트입니다.
+-> https://cafe.naver.com/tteokbokk1
 
 <!--접근-->
 ## Contact
